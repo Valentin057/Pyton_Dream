@@ -27,3 +27,5 @@ for i in range(12) :
   total_expenses += expenses
 print(f" доходы - {round(salary * 12,2):_} расходы -{round(total_expenses,2):_}")    
 print(f"Необходимо взять в долг {round(total_expenses - total_salary,2):_}") 
+
+# Отлично!
