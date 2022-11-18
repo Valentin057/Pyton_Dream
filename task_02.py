@@ -17,3 +17,5 @@ for i in range(len(residents)) :
   tot_people = tot_people + residents[i][1]
 print("Население города {0} составляет {1:_} человек".format(residents[1][0], residents[1][1]))
 print(f"Итого размер населения составляет {tot_people:_} человек")
+
+# Отлично
