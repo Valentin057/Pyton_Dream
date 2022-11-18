@@ -37,3 +37,5 @@ for key_t,val_t in titles.items():
     b = val_s['price']
     c += round(a * b,2)
   print(f" Товар: {key_t} - в количестве {a_tot} на {c:.2f} руб.  ")
+
+# СЕЙЧАС ОТЛИЧНО :)
