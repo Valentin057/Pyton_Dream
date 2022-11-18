@@ -16,3 +16,4 @@ print(spic[-1])
 print(spic[1])
 print(spic[-2])
 
+# Отлично
