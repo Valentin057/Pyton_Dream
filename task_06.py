@@ -44,3 +44,12 @@ while _num < 3 :
 
 
 print(f"Три песни ({_taken_song[1 :]}) звучат {_total_m} мин {_total_s} сек")
+
+# У вас тут прям эксперименты))
+#  ну я тоже пришлю решение
+time = 0
+for song in sample(tuple(my_favorite_songs), 3):
+    print(song)
+    time += my_favorite_songs[song]
+
+print(f'Три песни звучат {round(time, 2)}')
