@@ -59,8 +59,12 @@ SELECT Student_Id,  Student_Name, sc.School_Id,School_Name
 FROM School sc
 JOIN Students st ON st.School_Id = sc.School_Id;
 """
+sstr = input('Введите код студента: ')
+rec = """
+SELECT Student_Id,  Student_Name, sc.School_Id,School_Name
+FROM School sc
+JOIN Students st ON st.School_Id = sc.School_Id
+WHERE Student_Id = """ + sstr + ';'
+
 print('ID студента  Имя студента ID школы Название школы') 
 aa1 = Baza('teatchera.db',rec,4)
-red = aa1.get_val()
-for i in red:
-  print(i) 
