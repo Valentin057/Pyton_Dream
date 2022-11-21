@@ -66,5 +66,13 @@ FROM School sc
 JOIN Students st ON st.School_Id = sc.School_Id
 WHERE Student_Id = """ + sstr + ';'
 
-print('ID студента  Имя студента ID школы Название школы') 
+print('ID студента'.center(14," "),'Имя студента'.center(14," "),
+      'ID школы'.center(14," "),'Название школы'.ljust(18)) 
 aa1 = Baza('teatchera.db',rec,4)
+red = aa1.get_val()
+
+for i in red:
+  str = '    ' 
+  for j in i :
+    str += j.center(14,' ')
+  print(str)
