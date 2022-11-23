@@ -55,3 +55,14 @@ total_min = total_min + n
 print(" выбранные композиции: '" + "', '".join(song_name_test) +"'")
 print(f" Общая продолжительность трех композиций - {total_min} мин {total_sec} сек ")  
 print(f" Три песни звучат - {total_min}.{total_sec}")
+
+# Понял идею с перехлестыванием по секундам)
+# Ну как по мне довольно много переменных
+# Все ок. Но скину свой вариант
+# Решение 2
+time = 0
+for song in sample(my_favorite_songs, 3):
+    print(song[0])
+    time += song[1]
+
+print(f'Три песни звучат {round(time, 2)}')
